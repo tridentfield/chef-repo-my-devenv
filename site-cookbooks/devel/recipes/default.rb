@@ -7,10 +7,9 @@
 # All rights reserved - Do Not Redistribute
 #
 
-%w{git}.each do |pkg|
+%w{git gcc zlib-devel openssl-devel sqlite sqlite-devel}.each do |pkg|
   package pkg do
     action :install
   end
 end
-
 
